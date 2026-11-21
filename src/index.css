@@ -1,0 +1,87 @@
+/* ShopNest - Custom Styling & Bootstrap Enhancements */
+
+/* Card hover animation */
+.product-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #ffffff;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Cursor pointer */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Product Card Image Container */
+.card-img-wrapper {
+  height: 220px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.product-img {
+  max-height: 180px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.04);
+}
+
+/* Detail page image */
+.product-detail-img {
+  max-height: 420px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Two-line text truncation */
+.text-truncate-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 2.8em;
+  line-height: 1.4;
+}
+
+/* Extra small font size for category badge */
+.fs-xs {
+  font-size: 0.75rem;
+}
+
+/* Transitions */
+.transition-all {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+}
+
+.hero-badge-card {
+  backdrop-filter: blur(10px);
+}
+
+/* Quantity stepper styles */
+.quantity-stepper .btn {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* Accessible focus styling */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+.product-card:focus-visible {
+  outline: 3px solid #ffc107;
+  outline-offset: 2px;
+}
